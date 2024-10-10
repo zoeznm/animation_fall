@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="script.js" />
+  </head>
+  <body>
+    <div class="scene">
+      <!-- 캐릭터 SVG -->
+      <svg
+        id="character"
+        width="200"
+        height="400"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <!-- 머리 -->
+        <circle id="head" cx="100" cy="60" r="40" fill="#FFD700" />
+
+        <!-- 몸통 -->
+        <rect id="body" x="75" y="100" width="50" height="100" fill="#007bff" />
+
+        <!-- 팔 왼쪽 -->
+        <rect
+          id="left-arm"
+          x="45"
+          y="100"
+          width="30"
+          height="10"
+          fill="#007bff"
+        />
+
+        <!-- 팔 오른쪽 -->
+        <rect
+          id="right-arm"
+          x="125"
+          y="100"
+          width="30"
+          height="10"
+          fill="#007bff"
+        />
+
+        <!-- 다리 왼쪽 -->
+        <rect
+          id="left-leg"
+          x="75"
+          y="200"
+          width="10"
+          height="100"
+          fill="#007bff"
+        />
+
+        <!-- 다리 오른쪽 -->
+        <rect
+          id="right-leg"
+          x="115"
+          y="200"
+          width="10"
+          height="100"
+          fill="#007bff"
+        />
+      </svg>
+
+      <!-- 종이 3장 -->
+      <div class="paper" id="paper1"></div>
+      <div class="paper" id="paper2"></div>
+      <div class="paper" id="paper3"></div>
+    </div>
+  </body>
+</html>

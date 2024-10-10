@@ -1,0 +1,66 @@
+.scene {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-color: #f0f0f0;
+}
+
+.paper {
+  width: 30px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  opacity: 0;
+}
+
+#paper1 {
+  top: 50px;
+  left: 60px;
+}
+
+#paper2 {
+  top: 70px;
+  left: 100px;
+}
+
+#paper3 {
+  top: 90px;
+  left: 140px;
+}
+
+/* 캐릭터 넘어지는 애니메이션 */
+@keyframes fall {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(50px, 150px) rotate(30deg);
+  }
+  100% {
+    transform: translate(100px, 250px) rotate(90deg);
+  }
+}
+
+/* 종이가 떨어지는 애니메이션 */
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(100px) rotate(20deg);
+  }
+}
+
+/* 팔과 다리 움직임 추가 */
+#character {
+  animation: fall 2s ease-in-out forwards;
+}
+
+#left-arm,
+#right-arm,
+#left-leg,
+#right-leg {
+  animation: fall 2s ease-in-out forwards;
+}
